@@ -1,0 +1,282 @@
+.main-hero__title-wrapper {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-hero__title--br {
+    display: block;
+}
+
+
+@media screen and (min-width: 1440px) {
+  .main-hero__title--br-desktop {
+    display: block;
+  }
+}
+
+.main-hero__title {
+  font-family: var(--second-font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--primary-text-color);
+  margin-bottom: 32px;
+}
+
+.main-hero__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.main-hero__text {
+  font-family: var(--second-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+
+.main-hero__item {
+  box-shadow: (20px 20px 80px rgba(0, 0, 0, 0.3));
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+.anchor-link {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+
+    &__svg {
+      fill: var(--main-icon-color);
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.main-hero__img1,
+.main-hero__item1 {
+  border-radius: 0px 35px 0px 0px;
+}
+
+.main-hero__img2,
+.main-hero__item2 {
+  border-radius: 100px;
+}
+
+.main-hero__img3,
+.main-hero__item3 {
+  border-radius: 0px 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .main-hero__title {
+    margin-bottom: 64px;
+    font-size: 24px;
+  }
+  .main-hero__list {
+    margin-bottom: 64px;
+  }
+  .main-hero__item:not(:last-child) {
+    margin-right: 20px;
+  }
+  .main-hero__text {
+    font-size: 18px;
+    line-height: 1.17;
+  }
+  .img-anchor__wrapper {
+    position: relative;
+  }
+
+  .anchor-link__svg {
+    position: absolute;
+    left: 74px;
+    top: 105px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .anchor-link__svg {
+    width: 32px;
+    height: 32px;
+    left: 43px;
+    top: 222px;
+  }
+
+  .main-hero__title {
+    font-size: 48px;
+  }
+  .main-hero__list {
+    margin-bottom: 100px;
+  }
+  .main-hero__text {
+    font-size: 36px;
+    line-height: 1.17;
+  }
+  .main-hero__item:not(:last-child) {
+    margin-right: 36px;
+  }
+
+  .main-hero__img1,
+  .main-hero__item1 {
+    border-radius: 0px 72px 0px 0px;
+  }
+
+  .main-hero__img3,
+  .main-hero__item3 {
+    border-radius: 0px 72px;
+  }
+}
+
+
+
+
+// SLIDER //
+
+@media screen and (max-width: 767px) {
+  .slick-arrow, .slick-prev, .slick-next {
+    display: none;
+    position: absolute;
+    z-index: -10;
+    left: 10px;
+    top: 50%;
+    font-size: 0;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+  }
+
+  .hero__slider { 
+    margin-bottom: 32px;
+  }
+  
+  .main-hero__img1 {
+    margin: auto;
+  }
+  
+  .main-hero__img2 {
+    margin: auto;
+  }
+  
+  .main-hero__img3 {
+    margin: auto;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .img-anchor__wrapper .hero__slider {
+    margin-left: 140px;
+    margin-right: 140px;
+  }
+  
+  .slick-arrow {
+    position: absolute;
+    top: 33%;
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .slick-arrow:after{
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    transform: rotate(45deg);
+  }
+  
+  .slick-prev {
+    left: -40px;
+  }
+  
+  .slick-prev:after {
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+  }
+  
+  .slick-next {
+    right: -40px;
+  }
+  
+  .slick-next:after {
+    border-right: 2px solid #000;
+    border-top: 2px solid #000;
+  }
+  
+  .hero__slider { 
+    margin-bottom: 65px;
+  }
+
+  .main-hero__img1 {
+    margin: auto;
+  }
+  
+  .main-hero__img2 {
+    margin: auto;
+  }
+  
+  .main-hero__img3 {
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .img-anchor__wrapper .hero__slider {
+    position: relative;
+    margin-left: 180px;
+    margin-right: 180px;
+  }
+  
+  .slick-arrow {
+    top: 45%;
+  }
+  
+  .slick-arrow:after{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    transform: rotate(45deg);
+  }
+  
+  .slick-prev {
+    left: -50px;
+  }
+  
+  .slick-prev:after {
+    border-left: 3px solid #000;
+    border-bottom: 3px solid #000;
+  }
+  
+  .slick-next {
+    right: -50px;
+  }
+  
+  .slick-next:after {
+    border-right: 3px solid #000;
+    border-top: 3px solid #000;
+  }
+  
+  .hero__slider { 
+    margin-bottom: 100px;
+  }
+}

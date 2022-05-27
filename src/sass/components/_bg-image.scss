@@ -1,0 +1,71 @@
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+// Mobile from 0 to 320px to 767px
+@media screen and (max-width: 767px) {
+  .bg-img {
+    background-image: url(../../src/images/background/bg-main-mobile.png);
+
+    background-size: 320px 1534px;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-position: center top;
+
+    width: 320px;
+    height: 1534px;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../../src/images/background/bg-main-mobile@2x.png);
+    }
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) scale(1);
+    z-index: -100;
+  }
+}
+// Tablet from 768px to 1439px
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .bg-img {
+    background-image: url(../../src/images/background/bg-main-tablet.png);
+
+    background-size: 768px 1608px;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-position: center top;
+
+    width: 768px;
+    height: 1608px;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../../src/images/background/bg-main-tablet@2x.png);
+    }
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) scale(1);
+    z-index: -100;
+  }
+}
+// Desktop from 1440px to max
+@media screen and (min-width: 1440px) {
+  .bg-img {
+    background-image: url(../../src/images/background/bg-main-desktop.png);
+
+    background-size: 1440px 3038px;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-position: center top;
+
+    width: 1440px;
+    height: 3038px;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../../src/images/background/bg-main-desktop@2x.png);
+    }
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) scale(1);
+    z-index: -100;
+  }
+}

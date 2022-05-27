@@ -1,0 +1,132 @@
+
+<main>
+  <section class="section">
+  <div class="container">
+    <h1 class="main__title-section ordering__title">Зробити замовлення</h1> 
+    
+    <div class="ordering__wrapper"> 
+    
+    <div class="ordering__wrapper-img">    
+    <div class="ordering__img"></div>    
+    </div>
+
+<div class="ordering__wrapper-text"> 
+  <p class="ordering__text">На цій сторінці ви можете зробити замовлення заповнивши форму і ми зв'яжемося з вами.</p>
+  <p class="ordering__text">Наші фахівці допоможуть підібрати оптимальні для вас параметри і дадуть відповідь на всі ваші запитання.</p>
+
+
+<div class="wrapper-hero-galery">    
+  <div class="wrapper-hero-galery__img-one"></div>
+  <div class="wrapper-hero-galery__img-two"></div> 
+  <div class="wrapper-hero-galery__img-three"></div>     
+  </div>
+</div>
+
+  </div> 
+  </div>
+</section>
+
+
+<section class="section container contact-section"> 
+  <div class="left-side">
+    <h2 class="second__title-section form__tittle">Зв'яжіться з нами</h2>
+    <form  class="form__ordering" method="POST" autocomplete="off" enctype="multipart/form-data">
+        <div class="form__ordering-div">
+      <input class="form__ordering-input" type="text" name="nam" id="name" minlength="2" placeholder=" " required pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Ім'я повинно містити символи кирилиці або латиниці">           
+      <label class="form__ordering-label">Ім'я</label>
+        </div>
+
+        <div class="form__ordering-div">
+      <input class="form__ordering-input" type="email" id="email" name="user-email" placeholder=" " required>
+      <label class="form__ordering-label" for="email">Email</label>
+        </div>
+
+       <div class="select-wrapper">
+        <select  class="select" id="types-of-plastic" name="types-of-plastic">
+          <option class="select_option" selected disabled>Види пластику</option>
+          <option class="select_option" value="PET">PET</option>
+          <option class="select_option" value="PEHD">PEHD</option>
+          <option class="select_option" value="LDPE">LDPE</option>
+        </select>
+      </div>
+
+      <div class="select-wrapper">
+        <select class="select" id="quality" name="quality">
+          <option class="select_option" selected disabled>Якість друку</option>
+          <option value="300">300 мікрон</option>
+          <option value="200">200 мікрон</option>
+          <option value="100">100 мікрон</option>
+          <option value="help">Труднощі у виборі - ми допоможемо</option>
+        </select>
+      </div>
+      
+      <div class="select-wrapper">
+        <select class="select" id="types-of-color" name="types-of-color">
+          <option class="select_option" selected disabled>Колір</option>
+          <option value="white">Білий</option>
+          <option value="black">Чорний</option>
+          <option value="red">Червоний</option>
+        </select>
+      </div>
+  <div class="textarea-wrapper">
+        <label class="textarea-label">
+            Повідомлення
+        <textarea class="order-textarea" name="user-message" placeholder="Залишіть своє повідомлення"></textarea>
+        </label>
+        <label class="file-label" for="file"> 
+        <input class="file" type="file" id="file" name="file"> 
+        <span>
+<svg class="file-icon">
+  <use href="./images/svg/icons.svg#icon-simple-line-icons_paper-clip"></use>
+</svg>
+        </span>
+      </label>
+    </div>
+    <p class="form-text">*Прикріпіть зображення / креслення / STL / Obj / CAD-модель</p>
+    <button type="submit" class="btn__send-form order-btn">Відправити</button>
+  </form>
+  <div class="wpapper_desk-img">
+  <div class="desk-img"></div>
+</div>
+</div> 
+ 
+
+<div class="right-side">
+   <div  class="contact-wrapper">
+    <h2 class="second__title-section contact__tittle">Телефони</h2>
+    
+    <ul class="order__phone-list">
+
+    <li class="order__phone-item">
+        <a class="order__phone" href="tel:+380957384551">+38 (095) -73-84-551</a>
+    </li>
+
+    <li class="order__phone-item">
+        <a class="order__phone" href="tel:+380980025235">+38 (098) -00-25-235</a>
+    </li>
+</ul>
+</div>
+<div class="contact-wrapper">
+<h2  class="second__title-section email-header">Email</h2>
+<a class="order__email" href="mailto:3dfreedom.info@gmail.com">3dfreedom.info@gmail.com</a>
+</div>
+ 
+<div class="contact-wrapper">
+
+    <h2 class="second__title-section contact__tittle">Робочий час</h2>
+<p class="contact__time">Пн-Пт: <br>
+    З 8:00 До 19:00</p>
+    
+  <p class="contact__time">Сб, Нд:<br>
+        З 10:00 До 17:00</p>
+</div>
+<!-- <div class="thumb-img">
+  <picture>
+    <source media="(min-widht: 1444px)"
+    srcset="./images/ordering/pic@2x.png 2x">
+    <img src="#" alt="3д фигура">
+</picture>
+</div> -->
+  </div>
+</section>
+</main>

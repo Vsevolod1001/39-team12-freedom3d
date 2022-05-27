@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Головна</title>
+    <include src="./partials/normalizer.html"></include>
+    <link rel="stylesheet" href="./sass/main.scss" />
+    <link rel="shortcut icon" type="image/ico" href="./images/favicon.ico" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <include src="./partials/header.html"></include>
+
+    <main>
+      <include src="./partials/main-hero.html"></include>
+      <include src="./partials/main-gallery.html"></include>
+
+      <!-- две разметки на выбор, активна с галереей для десктопа -->
+      <!-- <include src="./partials/main-more-photos.html"></include> -->
+      <include src="./partials/main-more-photos-gallery.html"></include>
+      <!-- *************** -->
+
+      <include src="./partials/main-more-photos-modal.html"></include>
+    </main>
+
+    <include src="./partials/footer.html"></include>
+
+    <include src="./partials/background.html"></include>
+  
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/anchor.js"></script>
+    <script src="./js/fslightbox.js"></script>
+    <script src="./js/more-photos-modal.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./js/slider.js"></script>
+
+  </body>
+</html>

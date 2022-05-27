@@ -1,0 +1,82 @@
+// Text Styling
+
+//Mobile less then 320px
+
+.main__title-section {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.25;
+
+  text-transform: uppercase;
+  color: var(--primary-title-color);
+}
+.second__title-section {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+
+  text-transform: uppercase;
+  color: var(--primary-title-color);
+}
+.paragraph-text {
+  font-family: var(--main-font);
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.25;
+
+  color: var(--primary-text-color);
+}
+
+//   Mobile from 320px to 767px
+
+@media screen and (min-width: 320px) {
+  .main__title-section {
+    font-size: 24px;
+    line-height: 1.25;
+
+    // text-transform: uppercase;
+    // color: var(--primary-title-color);
+  }
+  .second__title-section {
+    font-size: 18px;
+    line-height: 1.28;
+
+    // text-transform: uppercase;
+    // color: var(--primary-title-color);
+  }
+  .paragraph-text {
+    font-size: 16px;
+    line-height: 1.25;
+
+    // color: var(--primary-text-color);
+  }
+}
+//   Tablet from 768px to 1439px
+
+@media screen and (min-width: 768px) {
+  .main__title-section {
+    font-size: 36px;
+  }
+  .second__title-section {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+//   Desktop from 1440px to max
+
+@media screen and (min-width: 1440px) {
+  .main__title-section {
+    font-size: 48px;
+    line-height: 1.25;
+  }
+  .second__title-section {
+    font-size: 36px;
+    line-height: 1.25;
+  }
+  .paragraph-text {
+    font-size: 18px;
+    line-height: 1.28;
+  }
+}

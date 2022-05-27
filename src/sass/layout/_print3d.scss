@@ -1,0 +1,206 @@
+//---Model Examples---//
+// Mobile from 320px to 767px
+
+.model-examples__title {
+    margin-bottom: 16px;
+}
+.model-examples__container {
+    margin-bottom: 52px;
+}
+.printing3d__exapmles-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+}
+.model-examples__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(203, 203, 203, 0.5);
+    border-radius: 50px 0;
+    box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8), 
+    inset -1px -1px 16px rgba(255, 255, 255, 1);
+        
+    position: relative;
+
+    width: 133px;
+    height: 159px;
+}
+.model-examples__text {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 24px;
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--primary-title-color);
+    text-transform: uppercase;
+}
+.model-examples__text.design {
+    line-height: 1.25;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.model-examples__image {
+    margin-bottom: 20px;
+}
+
+// Tablet from 768px to 1439px
+
+@media screen and (min-width:768px) and (max-width: 1439px) {
+
+    .model-examples__title {
+        margin-bottom: 24px;
+    }
+    .printing3d__exapmles-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 13px;
+    }
+    .model-examples__item {
+        width: 152px;
+        height: 182px;
+    }
+    .model-examples__text {
+        padding-bottom: 31px;
+    }
+    .model-examples__text.design {
+        padding-bottom: 13px;
+    }
+    .model-examples__image {
+        margin-bottom: 20px;
+    }
+}
+
+//   Desktop from 1440px to max
+
+@media screen and (min-width: 1440px) {
+
+    .model-examples__title {
+        margin-bottom: 24px;
+    }
+    .model-examples__container {
+        margin-bottom: 100px;
+    }
+    .model-examples__image {
+        margin-bottom: 38px;
+    }
+    .printing3d__exapmles-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 21px;
+    }
+    .model-examples__item {
+        width: 250px;
+        height: 280px;
+    }
+    .model-examples__text {
+        padding-bottom: 40px;
+        font-size: 18px;
+    }
+    .model-examples__text.design {
+        padding-bottom: 17px;
+        font-size: 18px;
+    }
+    .model-examples__image {
+        margin-bottom: 38px;
+    }    
+}
+
+//---Process Description---//
+
+.process-description-item {
+    display: flex;
+}
+
+.process-description-accent {
+    font-family: var(--main-font);
+    color: var(--primary-title-color);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.process-description__order-btn {
+    margin-left: 0;
+}
+
+//   Mobile from 0 to 320px to 767px
+
+@media screen and (max-width: 767px) {
+    .process-description-item {
+        display: block;
+    }
+    
+    .process-description-item:not(:last-child) {
+        margin-bottom: 52px;
+    }
+    
+    .pdi-right-side {
+        padding-top: 16px;
+        padding-left: 0;
+        width: 280px;                
+    }
+    .process-description-accent {
+        font-size: 16px;
+    }
+    .process-description-text {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+    .process-description-text__last {
+        margin-bottom: 24px;
+    }      
+}
+
+//   Tablet from 768px to 1439px
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+    .process-description-item:not(:last-child) {
+        margin-bottom: 76px;
+    }
+    .pdi-right-side {
+        padding-left: 20px;
+        width: 400px;
+    }
+    .process-description-accent {
+        font-size: 16px;
+    }
+    .process-description-text {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+    .process-description-text__last {
+        margin-bottom: 52px;
+    }
+}
+    
+//   Desktop from 1440px to max
+
+@media screen and (min-width: 1440px) {
+    .process-description-item {
+        display: flex;
+    }
+    .process-description-item:not(:last-child) {
+        margin-bottom: 100px;
+    }
+    .pdi-right-side {
+        padding-left: 78px;
+        width: 812px;
+    }
+    .process-description-accent {
+        font-size: 18px;
+    }
+    .process-description-text {
+        margin-bottom: 24px;
+    }
+    .process-description-text__last {
+        margin-bottom: 52px;
+    }
+    .process-description__order-btn {
+        margin-left: 0;
+    }
+    
+}
+
+
+

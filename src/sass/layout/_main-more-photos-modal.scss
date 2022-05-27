@@ -1,0 +1,132 @@
+.backdrop {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(43, 43, 43, 0.8);
+  backdrop-filter: blur(4px);
+  transform: scale(1);
+
+  transition-property: opacity, visibility, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &.is-hidden {
+    opacity: 0;
+    transform: scale(0);
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  position: absolute;
+  width: 236px;
+  height: 157px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(43, 43, 43, 0);
+  border: none;
+  padding: 0;
+
+  width: 15px;
+  height: 15px;
+
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+}
+
+.modal-button--right {
+  position: absolute;
+  right: -20px;
+  transform: translate(50%, 0);
+}
+
+.modal-button--left {
+  position: absolute;
+  left: -20px;
+  transform: translate(-50%, 0);
+}
+
+.modal-button__icon {
+  width: 11px;
+  height: 10px;
+  fill: #fff;
+}
+
+// ************************ MOBILE ********************
+
+@media screen and (max-width: 279px) {
+  .modal-button--right {
+    right: 0px;
+    transform: translate(0, 0);
+  }
+
+  .modal-button--left {
+    left: 0px;
+    transform: translate(0, 0);
+  }
+}
+
+// *********************** TABLET ********************
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 554px;
+    height: 369px;
+  }
+
+  .modal-button {
+    width: 30px;
+    height: 30px;
+  }
+
+  .modal-button__icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .modal-button--right {
+    right: -44px;
+  }
+
+  .modal-button--left {
+    left: -44px;
+  }
+}
+
+// *********************** DESKTOP ********************
+
+@media screen and (min-width: 1440px) {
+  .modal {
+    width: 906px;
+    height: 605px;
+  }
+
+  .modal-button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .modal-button__icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .modal-button--right {
+    right: -78px;
+  }
+
+  .modal-button--left {
+    left: -78px;
+  }
+}

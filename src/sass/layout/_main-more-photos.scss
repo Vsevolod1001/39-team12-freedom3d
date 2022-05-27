@@ -1,0 +1,96 @@
+// ****************************
+
+@media screen and (max-width: 1439px) {
+  .full-gallery--hidden {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .gallery--hidden {
+    display: none;
+  }
+}
+
+// **************************
+
+.main__title-section--margin {
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .more-photos__item--hidden {
+    display: none;
+  }
+
+  .more-photos__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .more-photos__item:not(:first-child) {
+    margin-top: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main__title-section--margin {
+    margin-bottom: 32px;
+  }
+
+  .more-photos__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -18px;
+    margin-top: -19px;
+  }
+
+  .more-photos__item {
+    margin-left: 18px;
+    margin-top: 19px;
+    flex-basis: auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main__title-section--margin {
+    margin-bottom: 52px;
+  }
+
+  .more-photos__section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .more-photos__list {
+    margin-left: -32px;
+    margin-top: -32px;
+  }
+
+  .more-photos__item {
+    margin-left: 32px;
+    margin-top: 32px;
+  }
+
+  .more-photos__container {
+    position: relative;
+  }
+
+  .main__title-section--margin--after::after {
+    content: '';
+    display: inline-block;
+    width: 144px;
+    height: 144px;
+    border-radius: 50%;
+    background-image: url('../images/more-photo/decoration/tank.jpg');
+    background-position: -40px 0;
+
+    box-shadow: 20px 20px 80px 0px #00000040;
+
+    position: absolute;
+    right: 32px;
+    top: -87px;
+  }
+}

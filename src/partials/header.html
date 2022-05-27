@@ -1,0 +1,192 @@
+
+<!-- список можна видаляти, теги header залишаємо-->
+<header class="header__container container">
+    <div class="header-nav">
+        <nav class="main-nav">
+            <!--Логотип-->
+            <a href="./index.html" class="logo link">
+                <img src="./images/svg/logo.svg" alt="Логотип3DFreedom" class="logo-size">
+            </a>
+            <!--Навигация по сайту-->
+            <ul class="main-nav__site list">
+                <li class="main-nav__items"><a href="./index.html" class="main-nav__link link">Головна</a></li>
+                <li class="main-nav__items"><a href="#"
+                        class="main-nav__link link main-nav__link--submenu"><div class="services-bg"></div>Послуги
+                        <svg class="main-nav__icon--down">
+                            <use href="./images/svg/icons.svg#header-up">
+                            </use>
+                        </svg>
+                        <svg class="main-nav__icon--up">
+                            <use href="./images/svg/icons.svg#header-down">
+                            </use>
+                        </svg>
+                    </a>
+                    <!--Меню услуг-->
+                    <ul class="submenu list">
+                        <li class="submenu__items"><a href="./modeling.html" class="submenu__link link">3D
+                                Моделювання</a></li>
+                        <li class="submenu__items"><a href="./scanning.html" class="submenu__link link">3D
+                                Сканування</a></li>
+                        <li class="submenu__items"><a href="./print.html" class="submenu__link  link">3D Друк</a></li>
+                    </ul>
+                </li>
+                <li class="main-nav__items"><a href="./order.html" class="main-nav__link link margin-null">Замовити</a></li>
+                <li class="main-nav__items"><a href="./contacts.html" class="main-nav__link link">Контакти</a></li>
+            </ul>
+        </nav>
+        <!--Бургер-меню-->
+        <button type="button" class="burger-btn" data-menu-open>
+            <svg class="burger-btn__icon">
+                <use href="./images/svg/icons.svg#burger"></use>
+            </svg>
+        </button>
+        <button class="phone-btn">
+            <svg class="phone-btn__icon">
+                <use href="./images/svg/icons.svg#phone"></use>
+            </svg>
+            <!--<svg class="submenu-phone__icon">
+                <use href="./images/svg/icons.svg#header-up"></use>
+            </svg>-->
+            <ul class="submenu-phone list">
+                <li class="submenu-phone__item">
+                    <a href="tel:+380936432288" class="phone-contact__link link">
+                        +38 (093) 643 22 88
+                    </a>
+                </li>
+                <li class="submenu-phone__item">
+                    <a href="tel:+380503454423" class="phone-contact__link link">
+                        +38 (050) 345 44 23
+                    </a>
+                </li>
+            </ul>
+        </button>
+<div class="block-lang-phone">
+        <!--Выбор языка сайта-->
+        <ul class="lang-site list">
+            <li class="lang-site__item">
+                <a href="" class="lang-site__link link">ENG</a>
+            </li>
+            <li class="lang-site__item">
+                <a href="" class="lang-site__link--other link">UKR</a>
+            </li>
+            <li class="lang-site__item">
+                <a href="" class="lang-site__link--other link">RUS</a>
+            </li>
+        </ul>
+        <!-- Список контактных телефонов-->
+        <ul class="phone-contact list">
+            <li class="phone-contact__item">
+                <a href="tel:+380936432288" class="phone-contact__link link">
+                    <svg class="phone-contact__tel">
+                        <use href="./images/svg/icons.svg#phone">
+                        </use>
+                    </svg>
+                    +38 (093) 643 22 88
+                </a>
+            </li>
+            <li class="phone-contact__item">
+                <a href="tel:+380503454423" class="phone-contact__link link">
+                    <svg class="phone-contact__tel">
+                        <use href="./images/svg/icons.svg#phone">
+                        </use>
+                    </svg>
+                    +38 (050) 345 44 23
+                </a>
+            </li>
+        </ul>
+</div>
+    </div>
+    <!--Мобильное меню-->
+    <div class="mobile-menu" data-menu><div class="bg-img"></div>
+        <div class="mobile-menu__container">
+            <div class="mobile-menu__header">
+                <!-- логотип -->
+                <a href="" class="logo link">
+                    <img src="./images/svg/logo.svg" alt="Логотип3DFreedom" class="logo-size">
+                </a>
+                <!-- кнопка закрытия меню -->
+                <button class="close-btn mobile-menu__close-btn" data-menu-close>
+                    <svg class="close-btn__icon">
+                        <use href="./images/svg/icons.svg#close"></use>
+                    </svg>
+                </button>
+                <button class="phone-btn">
+                    <svg class="phone-btn__icon">
+                        <use href="./images/svg/icons.svg#phone"></use>
+                    </svg>
+                    <ul class="submenu-phone list">
+                        <li class="submenu-phone__item">
+                            <a href="tel:+380936432288" class="phone-contact__link link">
+                                +38 (093) 643 22 88
+                            </a>
+                        </li>
+                        <li class="submenu-phone__item">
+                            <a href="tel:+380503454423" class="phone-contact__link link">
+                                +38 (050) 345 44 23
+                            </a>
+                        </li>
+                    </ul>
+                </button>
+                <div class="block-lang-phone">
+                <!-- выбор языка сайта -->
+                <ul class="lang-site list">
+                    <li class="lang-site__item">
+                        <a href="" class="lang-site__link link">ENG</a>
+                    </li>
+                    <li class="lang-site__item">
+                        <a href="" class="lang-site__link--other link">UKR</a>
+                    </li>
+                    <li class="lang-site__item">
+                        <a href="" class="lang-site__link--other link">RUS</a>
+                    </li>
+                </ul>
+                <!-- список телефонов -->
+                <ul class="phone-contact list">
+                    <li class="phone-contact__item">
+                        <a href="tel:+380936432288" class="phone-contact__link link">
+                            <svg class="phone-contact__tel">
+                                <use href="./images/svg/icons.svg#phone">
+                                </use>
+                            </svg>
+                            +38 (093) 643 22 88
+                        </a>
+                    </li>
+                    <li class="phone-contact__item">
+                        <a href="tel:+380503454423" class="phone-contact__link link">
+                            <svg class="phone-contact__tel">
+                                <use href="./images/svg/icons.svg#phone">
+                                </use>
+                            </svg>
+                            +38 (050) 345 44 23
+                        </a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <!-- навигация по сайту -->
+            <ul class="nav-list list">
+                <li class="nav-list__item">
+                    <a href="./index.html" class="nav-list__link nav-list__link--active link">Головна</a>
+                </li>
+                <li class="nav-list__item">
+                    <a href="#" class="nav-list__link link">Послуги</a>
+                    <ul class="service list">
+                        <li class="service__items"><a href="./modeling.html" class="service__link link">3D
+                                Моделювання</a>
+                        </li>
+                        <li class="service__items"><a href="./scanning.html" class="service__link link">3D
+                                Сканування</a>
+                        </li>
+                        <li class="service__items"><a href="./print.html" class="service__link link">3D Друк</a></li>
+                    </ul>
+                </li>
+                <li class="nav-list__item">
+                    <a href="./order.html" class="nav-list__link link">Замовити</a>
+                </li>
+                <li class="nav-list__item">
+                    <a href="./contacts.html" class="nav-list__link link">Контакти</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
